@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img{
+    max-width: 100%;
+}
+body{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+header{
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 span{
+    transform: translateY(-200%);
+    opacity: 0;
+    display: inline-block;
+    position: relative;
+    /* animation: dicte 0.4s; */
+    transition:  0.4s ease-in-out;
+    animation: dicte 3.5s 1 forwards 3.5s;
+
+}
+header h2 span:nth-child(1){
+    animation-delay: 1.0s;
+}
+header h2 span:nth-child(2){
+    animation-delay: 1.0s;
+}
+
+header h2 span:nth-child(3){
+    animation-delay: 1.3s;
+}
+
+header h2 span:nth-child(4){
+    animation-delay: 1.6s;
+}
+
+header h2 span:nth-child(5){
+    animation-delay: 1.9s;
+}
+
+header h2 span:nth-child(6){
+    animation-delay: 2.1s;
+}
+
+header h2 span:nth-child(7){
+    animation-delay: 2.4s;
+}
+
+header h2 span:nth-child(8){
+    animation-delay: 2.7s;
+}
+
+header h2 span:nth-child(9){
+    animation-delay: 3;
+}
+header h2 span:nth-child(10){
+    animation-delay: 3.3;
+}
+
+
+
+
+@keyframes dicte {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+
+}
+
+.svgContent{
+    width: 70%;
+    max-width: 700px;
+    margin: 1rem auto;
+    /* border: solid; */
+}
+
+g#pales{
+    animation:  rotatePales 1s infinite linear;
+    transform-origin: 125px 117px;
+
+}
+
+@keyframes rotatePales{
+    100% {
+        transform: rotate(360deg);
+    }
+}

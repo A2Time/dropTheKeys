@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+@font-face {
+    font-family: autography ;
+    src: url(../fonts/Autography.otf);
+}
+@font-face{
+    font-family: athelas;
+    src: url(../fonts/Athelas-Regular.ttf);
+    
+}
+@font-face {
+    font-family:champ_lim ;
+    src: url(../fonts/Champagne&Limousines.ttf);
+    /* url(/fonts/Champagne&Limousines\ Bold.ttf) */
+}
+*
+body{
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    /* margin-bottom: 50px;  */
+}
+
+.text_center{
+    text-align: center;
+}
+.autography{
+    font-family: autography;
+}
+.athelas{
+    font-family: athelas;
+}
+.champ_lim{
+    font-family: champ_lim;
+    /* font-weight: bolder; */
+}
+
+.window{
+    border-bottom: 7px solid transparent;
+    border-left: 2px solid rgba(255,255,255,.3);
+    border-top: 2px solid rgba(255,255,255,.3);
+    border-radius: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.612);
+}
+img{
+    max-width: 100%;
+}
+h2{
+    font-size: xx-large;
+    /* margin:0  50px; */
+}
+h3{
+    font-size: x-large;
+}
+.pointer{
+    cursor: pointer;
+}
+.mini_icon{
+    width: 30px; 
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    font-family: athelas;
+}
+.icons{
+    width: 35px;
+}
+.btn{
+    height: fit-content;
+    background-color: #a7988d;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.201);
+    transform: translateY(2px);
+}
+
+/* NAV BAR */
+
+.logo{
+    width: 100px;
+}
+
+nav{
+    padding: 20px 10px;
+}
+nav ul{
+    flex-direction: column;
+}
+nav ul li{
+    list-style: none;
+
+}
+ul li a{
+color: #743729;
+display: none;
+}
+
+nav{
+    width: 100%;
+    /* border: solid; */
+}
+
+/* SECTION */
+section{
+    flex-direction: column;
+}
+.intro_accueil{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+    /* border: solid; */
+}
+.intro_accueil img{
+    width: 100%;
+    height: 500px;
+    /* object-fit: fill; */
+}
+
+.background_opac{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;   
+}
+
+.text{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff ;
+    padding: 20px;
+    padding-left: 60px;
+    /* border: solid; */
+}
+
+.text h2{
+    font-size: 3em;
+    /* margin: 0px 0; */
+    font-family: champ_lim;
+    letter-spacing: 2px;
+    
+}
+
+.text h4{
+    margin: 10px 0px;
+    font-family: athelas;
+    /* letter-spacing: px; */
+}
+
+.text p{
+    width: fit-content;
+    padding: 10px 30px;
+    margin: 40px 0px 0 20px;
+    font-size: x-large;
+    font-family: autography;
+}
+
+/* PARAGRAPHE */
+
+.paragraphe{
+    width: 100%;
+    margin: 0 70px;
+/* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.explication{
+width: 90%;
+mIN-width: 400px;
+max-width: 600px;
+}
+.paragraphe h3{
+    font-family: champ_lim;
+    font-size: xx-large ;
+    font-weight: bold ;
+    margin-bottom: 30px;
+}
+.paragraphe h4{
+    font-size: x-large ;
+    font-weight: 1000;
+    margin-bottom: 15px;
+    font-family: champ_lim;
+    /* border: solid; */
+}
+.paragraphe p{
+    /* width: 90%; */
+    font-size: large;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    /* font-weight: 10; */
+    /* border: solid; */
+}
+.paragraphe button{
+    font-size: large;
+    border: none;
+    margin: 30px;
+    padding: 15px 30px 10px 30px;
+    /* width: 160px; */
+    height: 50px;
+    border-bottom: 7px solid transparent;
+    border-left: 2px solid rgba(255,255,255,.3);
+    border-top: 2px solid rgba(255,255,255,.3);
+}
+.paragraphe img{
+    width: 100%;
+    max-width: 600px;
+  
+    margin-top: 50px;
+}
+
+.avantage{
+    flex-direction: column;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.avantage h2{
+    margin-bottom: 10px;
+}
+.avantage p{
+    width: 400px;
+}
+
+.blocs{
+    width: 100%;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+    /* flex-direction: row; */
+    
+}
+
+.bloc{
+    flex-direction: column;
+    border: #A7988D solid ;
+    width: 450px;
+    padding: 30px;
+    font-size: x-large;
+    margin-bottom: 30px;
+
+}
+
+.bloc a{
+    color: black;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.bloc img{
+    width: 70px;
+    margin: 20px;
+}
+
+.bloc_image{
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-top: 25px;
+}
+.images{
+    /* border: solid; */
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 45px;
+
+}
+.images img{
+    width: 40%;
+    height: 40%;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 5px;
+    object-fit: cover;
+    transition: ease-in-out 0.5s;
+}
+
+.images img:hover{
+    width: 45%;
+}
+
+.faq{
+    background-color: #e8d5c346 ;
+    width: 100%;
+    /* flex-direction: column; */
+    padding: 40px 10px;
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+.questions{
+        width: 100%;
+        min-width: 400px;
+        max-width: 700px;
+}
+.question{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    
+    height: 60px;
+    padding: 0px 15px;
+    margin: 10px  ;
+
+}
+
+.question img{
+    margin-right: 15px;
+}
+
+.img_faq{
+    width: 80%;
+    max-width: 500px;
+    height:  250px;
+    margin: 40px ;
+}
+
+.formule{
+    flex-wrap: wrap;
+}
+.offres{
+    width: 90% ;
+    max-width: 600px;
+    margin: 70px 0;
+    padding: 20px;
+    border-radius: 0%;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.173);
+}
+.offres strong{
+    font-size: 3rem;
+    margin-right: 50px;
+}
+
+ol li{
+    margin-left: 40px;
+padding: 8px;
+}
+
+.offres button{
+    font-size: x-large;
+    margin: 30px 50px;
+    border-right: none;
+}
+
+.offres p{
+    margin-bottom: 20px;
+}
