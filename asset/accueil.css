@@ -102,23 +102,53 @@ p{
 }
 
 nav{
-    padding: 20px 10px;
+    position: relative;
+    padding: 20px 0px 0 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navTop{
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+
+.nav_btn{
+    min-width: 300PX;
 }
 nav ul{
+    width: 100%;
     flex-direction: column;
+    padding: 10px 30px;
+    background-color: #e8d5c347 ;
+    opacity: 0;
+    display: none;
+    animation: navres 0.5s 1 forwards 1s;
+}
+
+@keyframes navres {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        display: flex;
+        /* transform: translate(); */
+    }
 }
 nav ul li{
     list-style: none;
+    margin: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 
 }
 ul li a{
-color: #743729;
-display: none;
-}
+color: #000000;
+/* display: none; */
 
-nav{
-    width: 100%;
-    /* border: solid; */
 }
 
 /* SECTION */
@@ -303,12 +333,14 @@ max-width: 600px;
 }
 
 .faq{
-    background-color: #e8d5c346 ;
+    background-color: #e8d5c314 ;
     width: 100%;
     /* flex-direction: column; */
     padding: 40px 10px;
     margin: 100px 0;
     flex-wrap: wrap;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.612); */
+    border-radius: 0%;
 }
 .questions{
         width: 100%;
@@ -319,10 +351,11 @@ max-width: 600px;
     display: flex;
     align-items: center;
     width: 90%;
-    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.612);
+    background: #e8d5c36c;
     height: 60px;
     padding: 0px 15px;
-    margin: 10px  ;
+    margin: 20px 10px ;
 
 }
 

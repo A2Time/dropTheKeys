@@ -10,11 +10,18 @@
 </head>
 
 <body>
-    <nav class="flex">
-        <img class="logo pointer" src="/asset/logo_principal.png" alt="">
-        <ul class="flex">
-            <li>
-                <a href="#">Accueil</a>
+    <nav class="contain">
+        <div class="navTop flex ">
+            <img class="logo pointer" src="/asset/logo_principal.png" alt="">
+            <div class="flex nav_btn">
+                <a class="btn" href="#"> Estimation rapide</a>
+                <img class="icons pointer" src="/asset/menuR.png" alt="">
+            </div>
+        </div>
+        </div>
+        <ul class="">
+            <li class="">
+                <a class="athelas" href="#">Accueil</a>
             </li>
 
             <li>
@@ -33,8 +40,6 @@
                 <a href="#"> Nous contacter</a>
             </li>
         </ul>
-        <a class="btn" href="#"> Estimation rapide</a>
-        <img class="icons pointer" src="/asset/menuR.png" alt="">
     </nav>
 
     <section class="flex">
@@ -103,7 +108,7 @@
                 </div>
             </div>
             <!-- QUESTION  -->
-            <div class="faq flex">
+            <div class="faq flex window">
                 <div class="questions">
                     <div class="question pointer window">
                         <img class="mini_icon" src="/asset/icons8-plus-50.png" alt="">
@@ -193,6 +198,8 @@
                 </div>
         </section>
 
+
+        <!-- <?php require_once 'dropTheKeys/form.php' ?> -->
 
     </section>
 </body>
