@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+@font-face {
+    font-family: autography ;
+    src: url(../fonts/Autography.otf);
+}
+@font-face{
+    font-family: athelas;
+    src: url(../fonts/Athelas-Regular.ttf);
+    
+}
+@font-face {
+    font-family:champ_lim ;
+    src: url(../fonts/Champagne&Limousines.ttf);
+    /* url(/fonts/Champagne&Limousines\ Bold.ttf) */
+}
+*
+body{
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    /* margin-bottom: 50px;  */
+}
+
+.text_center{
+    text-align: center;
+}
+.autography{
+    font-family: autography;
+}
+.athelas{
+    font-family: athelas;
+}
+.champ_lim{
+    font-family: champ_lim;
+    /* font-weight: bolder; */
+}
+
+.window{
+    border-bottom: 7px solid transparent;
+    border-left: 2px solid rgba(255,255,255,.3);
+    border-top: 2px solid rgba(255,255,255,.3);
+    border-radius: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.612);
+}
+img{
+    max-width: 100%;
+}
+h2{
+    font-size: xx-large;
+    /* margin:0  50px; */
+}
+h3{
+    font-size: x-large;
+}
+.pointer{
+    cursor: pointer;
+}
+.mini_icon{
+    width: 30px; 
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    font-family: athelas;
+}
+.icons{
+    width: 35px;
+}
+.btn{
+    height: fit-content;
+    background-color: #a7988d;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.201);
+    transform: translateY(2px);
+}
+
+/* NAV BAR */
+
+.logo{
+    width: 100px;
+}
+
+nav{
+    position: relative;
+    padding: 20px 0px 0 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navTop{
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+
+.nav_btn{
+    min-width: 300PX;
+}
+nav ul{
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: #e8d5c347 ;
+    opacity: 0;
+    display: none;
+    animation: navres 0.5s 1 forwards 1s;
+}
+
+@keyframes navres {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        display: flex;
+        /* transform: translate(); */
+    }
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+
+}
+ul li a{
+color: #000000;
+/* display: none; */
+
+}
+
+/* SECTION FORMULAIRE */
+
+#formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.m_logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: #E8D5C3;
+    border-radius: 50%;
+}
+
+/* .m_img{
+    width: 300px;
+    height: 280px;
+} */
+
+.title {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: medium;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    min-width: 450px;
+    margin: 20px 30px;
+}
+
+.saisi {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px 10px;
+}
+
+.saisi input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+.saisi input {
+    height: 30px;
+    outline: none;
+}
+
+.radio {
+    position: relative;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.saisi label,
+fieldset {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: x-large;
+    /* color: #743729; */
+    max-width: 400px;
+    font-family: champ_lim;
+    padding: 0 10px;
+    /* font-weight: 550; */
+}
+
+.saisi_radio label {
+    font-size: medium;
+}
+
+.saisi_radio{
+    /* border: solid; */
+    padding: 0px 20px;
+}
+:placeholder-shown {
+    font-size: medium;
+    font-style: italic;
+}
+
+p {
+    max-width: 300px;
+    text-align: center;
+}
+
+#message {
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 60px;
+    font-size: large;
+    border: none;
+    background: #E8D5C3;
+    color: #000000;
+    font-size: x-large ;
+    font-style: italic;
+
+}

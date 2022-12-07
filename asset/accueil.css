@@ -117,19 +117,21 @@ nav{
 .nav_btn{
     min-width: 300PX;
 }
-nav ul{
+#nav_links{
     width: 100%;
+    display: flex;
     flex-direction: column;
     padding: 10px 30px;
     background-color: #e8d5c347 ;
     opacity: 0;
-    display: none;
-    animation: navres 0.5s 1 forwards 1s;
+    animation: navres 0.3s 1 forwards 0.3s;
 }
+
 
 @keyframes navres {
     0%{
-        opacity: 0;
+        opacity: 0.2;
+        transform: translateX(-1px);
     }
     100%{
         opacity: 1;
@@ -142,13 +144,50 @@ nav ul li{
     margin: 10px;
     justify-content: flex-end;
     align-items: flex-end;
-
-
+    /* border: solid; */
 }
+
 ul li a{
 color: #000000;
 /* display: none; */
+}
 
+nav ul li:hover{
+    border-bottom: solid 1px;
+    /* font-size: larger; */
+    transition: 1s ease-in-out;
+}
+
+#close_burger{
+    display: none;
+}
+
+@media (min-width : 900px){
+
+   #nav_links{
+        position: absolute;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 65%;
+        top: 30px;
+        left: 120px;
+        max-width: 900px;
+        display: flex;
+    }
+    nav ul li{
+        width: fit-content;
+        /* border: solid; */
+    }
+    .burger{
+        display : none
+    }
+    .nav_btn {
+        min-width: fit-content;
+    } 
+    .nav_btn img{
+        visibility: hidden;
+    }
 }
 
 /* SECTION */
@@ -158,20 +197,20 @@ section{
 .intro_accueil{
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-bottom: 60px;
     /* border: solid; */
 }
 .intro_accueil img{
     width: 100%;
-    height: 500px;
+    height: 600px;
     /* object-fit: fill; */
 }
 
 .background_opac{
     background-color: rgba(0, 0, 0, 0.452);
     width: 100%;
-    height: 500px;
+    height: 600px;
     position: absolute;
     top: 0;   
 }
@@ -223,6 +262,7 @@ section{
 width: 90%;
 mIN-width: 400px;
 max-width: 600px;
+/* border: solid; */
 }
 .paragraphe h3{
     font-family: champ_lim;
@@ -235,15 +275,13 @@ max-width: 600px;
     font-weight: 1000;
     margin-bottom: 15px;
     font-family: champ_lim;
-    /* border: solid; */
 }
 .paragraphe p{
-    /* width: 90%; */
+    width: 90%;
     font-size: large;
     margin-bottom: 10px;
     letter-spacing: 0.5px;
     /* font-weight: 10; */
-    /* border: solid; */
 }
 .paragraphe button{
     font-size: large;
@@ -399,4 +437,128 @@ padding: 8px;
 
 .offres p{
     margin-bottom: 20px;
+}
+
+/* SECTION FORMULAIRE */
+
+#formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.m_logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: #E8D5C3;
+    border-radius: 50%;
+}
+
+.m_img{
+    width: 300px;
+    height: 280px;
+}
+
+.title {
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: medium;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    min-width: 450px;
+    margin: 20px 30px;
+}
+
+.saisi {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px 10px;
+}
+
+.saisi input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+.saisi input {
+    height: 30px;
+    outline: none;
+}
+
+.radio {
+    position: relative;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.saisi label,
+fieldset {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: x-large;
+    /* color: #743729; */
+    max-width: 400px;
+    font-family: champ_lim;
+    padding: 0 10px;
+    /* font-weight: 550; */
+}
+
+.saisi_radio label {
+    font-size: medium;
+}
+
+.saisi_radio{
+    /* border: solid; */
+    padding: 0px 20px;
+}
+:placeholder-shown {
+    font-size: large;
+    font-style: italic;
+    font-family: autography;
+}
+
+
+
+#message {
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 60px;
+    font-size: large;
+    border: none;
+    background: #E8D5C3;
+    color: #000000;
+    font-size: x-large ;
+    font-style: italic;
+}
+
+.subtitle{
+    max-width: 300px;
 }

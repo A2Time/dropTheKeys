@@ -6,9 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/asset/form.css">
 </head>
 
-<body>
+<!-- <body> -->
+    <!-- <nav class="contain">
+        <div class="navTop flex ">
+            <img class="logo pointer" src="/asset/logo_principal.png" alt="">
+            <div class="flex nav_btn">
+                <a class="btn" href="#"> Estimation rapide</a>
+                <img class="icons pointer" src="/asset/menuR.png" alt="">
+            </div>
+        </div>
+        </div>
+        <ul class="">
+            <li class="">
+                <a class="athelas" href="#">Accueil</a>
+            </li>
+
+            <li>
+                <a href="#">Nos offres</a>
+            </li>
+
+            <li>
+                <a href="#">Qui sommes-nous ?</a>
+            </li>
+
+            <li>
+                <a href="#">Blog</a>
+            </li>
+
+            <li>
+                <a href="/form.php"> Nous contacter</a>
+            </li>
+        </ul>
+    </nav> -->
     <section id="formulaire">
         <div class="container">
             <div class="title">
@@ -40,7 +72,7 @@
                 </div>
 
                 <fieldset class="radio">
-                    <legend for="demande">Votre demande </legend>
+                    <legend class="champ_lim" for="demande">Votre demande </legend>
                     <div class="saisi_radio">
                         <input type="radio" name="demande" value="devis">
                         <label for="devis">Demande de devis</label>
@@ -69,126 +101,131 @@
                     <textarea name="message" id="message" rows="10"></textarea>
                 </div>
 
-                <input type="submit" name="envoyer" value="Envoyez">
+                <input class="btn window pointer" type="submit" name="envoyer" value="Envoyez">
             </form>
         </div>
     </section>
-    <style>
-        #formulaire {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: black;
-        }
 
-        .container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            width: 100%;
-            max-width: 1100px;
-        }
+<!-- </body> -->
+<style>
+    #formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
 
-        .m_logo {
-            width: 150px;
-            height: 150px;
-            object-fit: contain;
-            padding: 20px;
-            background-color: #E8D5C3;
-            border-radius: 50%;
-        }
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+}
 
-        /* .m_img{
-            width: 300px;
-            height: 280px;
-        } */
+.m_logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: #E8D5C3;
+    border-radius: 50%;
+}
 
-        .title {
-            height: 300px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            padding: 20px;
-            font-size: medium;
-        }
+/* .m_img{
+    width: 300px;
+    height: 280px;
+} */
 
-        form {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            max-width: 500px;
-            min-width: 450px;
-            margin: 20px 30px;
-        }
+.title {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: medium;
+}
 
-        .saisi {
-            position: relative;
-            max-width: 500px;
-            width: 100%;
-            margin: 30px 10px;
-        }
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    min-width: 450px;
+    margin: 20px 30px;
+}
 
-        .saisi input,
-        textarea {
-            width: 100%;
-            border: none;
-            border-bottom: solid 1px;
-        }
+.saisi {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px 10px;
+}
 
-        .saisi input {
-            height: 30px;
-            outline: none;
-        }
+.saisi input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px;
+}
 
-        .radio {
-            position: relative;
-            width: 80%;
-            margin-top: 40px;
-        }
+.saisi input {
+    height: 30px;
+    outline: none;
+}
 
-        .saisi label,
-        fieldset {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            font-size: x-large;
-            /* color: #743729; */
-            max-width: 400px;
-        }
+.radio {
+    position: relative;
+    width: 80%;
+    margin-top: 40px;
+}
 
-        .saisi_radio label {
-            font-size: medium;
-        }
+.saisi label,
+fieldset {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: x-large;
+    /* color: #743729; */
+    max-width: 400px;
+    font-family: champ_lim;
+    padding: 0 10px;
+    /* font-weight: 550; */
+}
 
-        :placeholder-shown {
-            font-size: medium;
-            font-style: italic;
-        }
+.saisi_radio label {
+    font-size: medium;
+}
 
-        p {
-            max-width: 300px;
-            text-align: center;
-        }
+.saisi_radio{
+    /* border: solid; */
+    padding: 0px 20px;
+}
+:placeholder-shown {
+    font-size: medium;
+    font-style: italic;
+}
 
-        #message {
-            width: 100%;
-        }
+p {
+    max-width: 300px;
+    text-align: center;
+}
 
-        input[type="submit"] {
-            width: 150px;
-            height: 60px;
-            font-size: large;
-            border: none;
-            border-bottom: 7px solid transparent;
-            border-left: 2px solid rgba(255, 255, 255, .3);
-            border-top: 2px solid rgba(255, 255, 255, .3);
-            border-radius: 50px;
-            background: #E8D5C3;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.612);
-            
-        }
-    </style>
-</body>
+#message {
+    width: 100%;
+}
 
+input[type="submit"] {
+    width: 150px;
+    height: 60px;
+    font-size: large;
+    border: none;
+    background: #E8D5C3;
+    color: #000000;
+    font-size: x-large ;
+    font-style: italic;
+
+}
+</style>
 </html>

@@ -22,3 +22,21 @@ function renseignement($nom, $prenom, $email, $telephone, $demande, $message)
     $req->execute();
 
 };
+
+function estimation($nom, $typeLogement, $adresse, $typeEstim, $phone, $email){
+    $connexion = cnx();
+
+    $sql ="INSERT INTO `estimation` (`nom_client`, `type_logement`, `adresse`, `type_estimation`,`phone`, `email`)
+    VALUES (:nom, :type_logement, :adresse, :type_estim, :phone, :email)";
+
+    $req = $connexion->prepare($sql);
+
+    $req->bindValue(":nom", $nom);
+    $req ->bindValue(":type_logement", $typeLogement);
+    $req->bindValue(":adresse", $adresse);
+    $req->bindValue(":type_estim",$typeEstim);
+    $req ->bindValue(":phone", $phone);
+    $req ->bindValue(":email", $email);
+
+    $req->execute();
+}
