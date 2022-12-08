@@ -324,7 +324,7 @@ max-width: 600px;
 
 .bloc{
     flex-direction: column;
-    border: #A7988D solid ;
+    border: #A7988D solid 1px ;
     width: 450px;
     padding: 30px;
     font-size: x-large;

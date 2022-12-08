@@ -27,7 +27,7 @@
             </li>
 
             <li>
-                <a href="#">Nos offres</a>
+                <a href="/offre.php">Nos offres</a>
             </li>
 
             <li>
