@@ -7,25 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/asset/form.css">
+    <script src="/navbar.js" defer></script>
 </head>
 
-<!-- <body> -->
-    <!-- <nav class="contain">
+<body>
+<nav class="contain">
         <div class="navTop flex ">
-            <img class="logo pointer" src="/asset/logo_principal.png" alt="">
+            <a href="/index.php"><img class="logo pointer" src="/asset/logo_principal.png" alt=""></a>
             <div class="flex nav_btn">
-                <a class="btn" href="#"> Estimation rapide</a>
-                <img class="icons pointer" src="/asset/menuR.png" alt="">
+                <a class="btn" href="/estimation.php"> Estimation rapide</a>
+                <img id="burger" class="icons pointer burger" src="/asset/menuR.png" alt="">
+                <img id="close_burger" class="icons pointer burger" src="/asset/close.png" alt="">
             </div>
         </div>
-        </div>
-        <ul class="">
+
+        <ul id="nav_links" class="">
             <li class="">
-                <a class="athelas" href="#">Accueil</a>
+                <a class="athelas" href="/index.php">Accueil</a>
             </li>
 
             <li>
-                <a href="#">Nos offres</a>
+                <a href="/offre.php">Nos offres</a>
             </li>
 
             <li>
@@ -40,7 +42,7 @@
                 <a href="/form.php"> Nous contacter</a>
             </li>
         </ul>
-    </nav> -->
+    </nav>
     <section id="formulaire">
         <div class="container">
             <div class="title">
@@ -106,8 +108,101 @@
         </div>
     </section>
 
-<!-- </body> -->
+</body>
 <style>
+    
+.logo{
+    width: 100px;
+}
+
+nav{
+    position: relative;
+    padding: 20px 0px 0 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navTop{
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+
+.nav_btn{
+    min-width: 300PX;
+}
+#nav_links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: #e8d5c347 ;
+    opacity: 0;
+    animation: navres 0.3s 1 forwards 0.3s;
+}
+
+
+@keyframes navres {
+    0%{
+        opacity: 0.2;
+        transform: translateX(-1px);
+    }
+    100%{
+        opacity: 1;
+        display: flex;
+        /* transform: translate(); */
+    }
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border: solid; */
+}
+
+ul li a{
+color: #000000;
+/* display: none; */
+}
+
+nav ul li:hover{
+    border-bottom: solid 1px;
+    /* font-size: larger; */
+    transition: 1s ease-in-out;
+}
+
+#close_burger{
+    display: none;
+}
+
+@media (min-width : 900px){
+
+   #nav_links{
+        position: absolute;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 65%;
+        top: 30px;
+        left: 120px;
+        max-width: 900px;
+        display: flex;
+    }
+    nav ul li{
+        width: fit-content;
+        /* border: solid; */
+    }
+    .burger{
+        display : none
+    }
+    .nav_btn {
+        min-width: fit-content;
+    } 
+    .nav_btn img{
+        visibility: hidden;
+    }
+}
     #formulaire {
     display: flex;
     justify-content: center;
