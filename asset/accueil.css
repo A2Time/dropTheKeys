@@ -119,26 +119,16 @@ nav{
 }
 #nav_links{
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 10px 30px;
     background-color: #e8d5c347 ;
-    opacity: 0;
-    animation: navres 0.3s 1 forwards 0.3s;
+
+
 }
 
 
-@keyframes navres {
-    0%{
-        opacity: 0.2;
-        transform: translateX(-1px);
-    }
-    100%{
-        opacity: 1;
-        display: flex;
-        /* transform: translate(); */
-    }
-}
+
 nav ul li{
     list-style: none;
     margin: 10px;
@@ -165,6 +155,7 @@ nav ul li:hover{
 @media (min-width : 900px){
 
    #nav_links{
+
         position: absolute;
         background-color: transparent;
         flex-direction: row;
@@ -173,7 +164,7 @@ nav ul li:hover{
         top: 30px;
         left: 120px;
         max-width: 900px;
-        display: flex;
+        display: flex !important;
     }
     nav ul li{
         width: fit-content;

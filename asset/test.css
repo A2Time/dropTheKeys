@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,9 @@
 img{
     max-width: 100%;
 }
+
+
+
 body{
 width: 100vw;
 height: 100vh;
@@ -95,7 +100,7 @@ header h2 span:nth-child(10){
 }
 
 g#pales{
-    animation:  rotatePales 1s infinite linear;
+    /* animation:  rotatePales 1s infinite linear; */
     transform-origin: 125px 117px;
 
 }

@@ -195,7 +195,7 @@ nav ul li:hover{
         top: 30px;
         left: 120px;
         max-width: 900px;
-        display: flex;
+        display: flex !important;
     }
     nav ul li{
         width: fit-content;

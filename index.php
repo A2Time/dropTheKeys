@@ -41,6 +41,14 @@
             <li>
                 <a href="/form.php"> Nous contacter</a>
             </li>
+
+            <li>
+                <a href="#">Investir à Toulouse</a>
+            </li>
+
+            <li>
+                <a href="#">Nos partenaires</a>
+            </li>
         </ul>
     </nav>
 

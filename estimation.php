@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,12 +132,12 @@
 
         <div class="ipt_text">
             <label for="phone">Un numero de téléphone pour vous joindre <em>*</em></label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" placeholder="Saisissez votre numéro de telephone">
         </div>
 
         <div class="ipt_text">
             <label for="email">Adresse e-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="Saisissez votre adresse mail">
         </div>
 
         <input class="window btn pointer" type="submit" name="estimation" value="Envoyer">

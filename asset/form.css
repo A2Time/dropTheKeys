@@ -151,6 +151,34 @@ color: #000000;
 
 }
 
+@media (min-width : 900px){
+
+    #nav_links{
+         position: absolute;
+         background-color: transparent;
+         flex-direction: row;
+         justify-content: space-around;
+         width: 65%;
+         top: 30px;
+         left: 120px;
+         max-width: 900px;
+         display: flex !important;
+     }
+     nav ul li{
+         width: fit-content;
+         /* border: solid; */
+     }
+     .burger{
+         display : none
+     }
+     .nav_btn {
+         min-width: fit-content;
+     } 
+     .nav_btn img{
+         visibility: hidden;
+     }
+ }
+
 /* SECTION FORMULAIRE */
 
 #formulaire {
